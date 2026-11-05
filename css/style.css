@@ -1,6 +1,4 @@
 
-/* ===== COULEURS ET STYLE GENERAL ===== */
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -23,8 +21,6 @@ a {
     --beige: #faf6f3;
 }
 
-
-/* ===== NAVIGATION ===== */
 
 .navbar {
     padding: 20px 0;
@@ -96,8 +92,6 @@ a {
 }
 
 
-/* ===== BOUTONS ===== */
-
 .btn-pink {
     background-color: var(--pink);
     color: white;
@@ -124,8 +118,6 @@ a {
     color: white;
 }
 
-
-/* ===== SECTIONS ===== */
 
 section {
     scroll-margin-top: 80px;

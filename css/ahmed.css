@@ -1,0 +1,366 @@
+/* ===== GENERAL SETTINGS ===== */
+
+:root {
+    --nude-light: #fdf8f5;
+    --nude: #f5e9e1;
+    --nude-deep: #ead8cc;
+    --cherry: #9c1530;
+    --cherry-dark: #740e24;
+    --ink: #493238;
+
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Figtree", "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== GENERAL ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--ink);
+    background-color: var(--nude-light);
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    line-height: 1.2;
+}
+
+p {
+    color: #806d6e;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 14px 0;
+    background-color: var(--nude-light);
+    border-bottom: 1px solid var(--nude-deep);
+}
+
+.navbar-brand {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    color: var(--cherry);
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: var(--cherry-dark);
+}
+
+.navbar-brand span {
+    color: var(--cherry);
+}
+
+.nav-link {
+    color: var(--ink);
+    margin-left: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--cherry);
+}
+
+.navbar-toggler {
+    border-color: var(--nude-deep);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem rgba(156, 21, 48, 0.15);
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero {
+    background-color: var(--nude-light);
+    padding: 90px 0;
+}
+
+.eyebrow {
+    color: var(--cherry);
+    font-size: 0.82rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.3rem, 5vw, 3.8rem);
+    color: var(--ink);
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.intro-text {
+    line-height: 1.9;
+    max-width: 500px;
+    color: #806d6e;
+}
+
+.focus {
+    color: var(--cherry);
+}
+
+.profile-photo {
+    width: 280px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 999px 999px 15px 15px;
+    border: 6px solid #fffdfb;
+    box-shadow: 12px 12px 0 var(--cherry);
+}
+
+.hero-actions {
+    margin-top: 25px;
+}
+
+/* ===== BUTTONS ===== */
+
+.main-btn,
+.second-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 8px 5px 0 0;
+    transition: 0.2s;
+}
+
+.main-btn {
+    background-color: var(--cherry);
+    color: white;
+    border: 2px solid var(--cherry);
+}
+
+.main-btn:hover {
+    background-color: var(--cherry-dark);
+    border-color: var(--cherry-dark);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.second-btn {
+    color: var(--cherry);
+    background: transparent;
+    border: 2px solid var(--cherry);
+}
+
+.second-btn:hover {
+    background-color: var(--cherry);
+    border-color: var(--cherry);
+    color: white;
+}
+
+/* ===== SECTIONS ===== */
+
+.section-padding {
+    padding: 75px 0;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.section-label {
+    color: var(--cherry);
+    font-size: 0.82rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--cherry);
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* ===== INFORMATION CARDS ===== */
+
+.info-card {
+    background-color: #fffdfb;
+    border: 1px solid var(--nude-deep);
+    border-left: 5px solid var(--cherry);
+    border-radius: 8px;
+    padding: 25px;
+    height: 100%;
+    transition: 0.25s;
+}
+
+.info-card:hover {
+    border-color: var(--cherry);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(73, 50, 56, 0.08);
+}
+
+.info-card h3 {
+    color: var(--cherry);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.info-card p,
+.info-card li {
+    color: #806d6e;
+    line-height: 1.8;
+}
+
+/* ===== SKILLS ===== */
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill {
+    display: inline-block;
+    background-color: var(--nude);
+    color: var(--cherry);
+    border: 1px solid var(--nude-deep);
+    padding: 9px 17px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ===== CONTACT ===== */
+
+.contact {
+    padding-block: 4rem;
+    background: var(--cherry);
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.contact p {
+    color: #fff;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.contact .main-btn {
+    background: var(--nude-light);
+    border-color: var(--nude-light);
+    color: var(--cherry);
+}
+
+.contact .main-btn:hover {
+    background: #fff;
+    border-color: #fff;
+    color: var(--cherry);
+}
+
+.contact .second-btn {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.contact .second-btn:hover {
+    background: #fff;
+    border-color: #fff;
+    color: var(--cherry);
+}
+
+.contact a:focus-visible {
+    outline-color: #fff;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: var(--ink);
+    color: var(--nude);
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+    color: var(--nude);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        text-align: center;
+        padding: 55px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .intro-text {
+        margin: 15px auto;
+    }
+
+    .profile-photo {
+        width: 220px;
+        height: 270px;
+        margin-top: 30px;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        margin-left: 8px;
+    }
+
+    .section-padding {
+        padding: 55px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .contact {
+        text-align: center;
+    }
+}
